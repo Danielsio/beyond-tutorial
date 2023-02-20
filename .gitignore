@@ -9,6 +9,9 @@ __pycache__/
 # Vagrant
 .vagrant
 
+# DB
+db.sqlite3
+
 # Distribution / packaging
 .Python
 build/
