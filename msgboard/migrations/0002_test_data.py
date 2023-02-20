@@ -1,11 +1,10 @@
 from django.db import migrations, transaction
 
+
 class Migration(migrations.Migration):
-    
     dependencies = [
         ('msgboard', '0001_initial'),
     ]
-    
     def generate_data(apps, schema_editor):
         from msgboard.models import Message
         test_data = [
@@ -19,3 +18,4 @@ class Migration(migrations.Migration):
     operations = [
         migrations.RunPython(generate_data),
     ]
+    
